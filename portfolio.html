@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Tinos:400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="portfolio">
+        <nav id="menu" class="panel">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Who I am</a></li>
+                <li><a href="portfolio.html">Things I've made</a></li>
+                <li><a href="contact.html">Talk to me!</a></li>
+            </ul>
+        </nav>
+        <a href="#menu" class="menu-link"><img src="img/navicon-gray.png" alt=""></a> 
+        <a href="index.html"><h1 class="header">Sara.</h1></a>
+
+        <div class="wrap push">
+            <ul class="gallery">
+                <li><a href="projects/project1.html"><img src="img/600x200.gif" alt="">
+                    <div class="title">
+                        <h4>Fine Art Photography by Barbara Chase</h4>
+                        <h5>Web Design & Development</h5>
+                    </div></a>
+                </li>
+                <li><a href="projects/project2.html"><img src="img/600x200.gif" alt="">
+                    <div class="title">
+                        <h4>VCD Survival Kit</h4>
+                        <h5>Print & Branding Design</h5>
+                    </div></a>
+                </li>
+                <li><a href="projects/project3.html"><img src="img/600x200.gif" alt="">
+                    <div class="title">
+                        <h4>Tenji Sushi</h4>
+                        <h5>Web Design & Development</h5>
+                    </div></a>
+                </li>
+                <li><a href="projects/project4.html"><img src="img/600x200.gif" alt="">
+                    <div class="title">
+                        <h4>Justin & Ashely's Wedding Stationary</h4>
+                        <h5>Print Design & Photography</h5>
+                    </div></a>
+                </li>
+                <li><a href="projects/project5.html"><img src="img/600x200.gif" alt="">
+                    <div class="title">
+                        <h4>Pacific Northwest Playing Cards</h4>
+                        <h5>Print Design & Illustration</h5>
+                    </div></a>
+                </li>
+                <li><a href="projects/project6.html"><img src="img/600x200.gif" alt="">
+                    <div class="title">
+                        <h4>Weinands Worth Home Brew</h4>
+                        <h5>Print & Branding Design</h5>
+                    </div></a>
+                </li>
+            </ul>
+            <div class="portfolio-container">
+                <h1>My Work</h1>
+                <div class="aboutme">
+                    <p> The work I've done varies a lot. I really enjoy designing for the web, but I've also done some pretty cool projects that don't belong on the internet! Feel free to take a look around and let me know what you think!</p> 
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+
+
+        $(document).ready( function() {
+    $('.img-title').ready(function(){
+        $('.img-title').hide()
+});
+
+    $('.projects').hover( function() {
+        $(this).find('.img-title').fadeIn(300);
+    }, function() {
+        $(this).find('.img-title').fadeOut(100);
+    });
+    
+});
+    </script>
+    </body>
+</html>
