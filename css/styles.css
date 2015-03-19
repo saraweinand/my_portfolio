@@ -6,7 +6,7 @@
 }
 
 body.index {
-    background: url(../img/deskbw.jpg);
+    background: url(../img/desk.jpg);
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -290,6 +290,9 @@ a.menu-link {
     margin-bottom: 10%;
 }
 
+.aboutme a {
+    margin-top: 5%;
+}
 
 .details p {
     display: block;
@@ -361,6 +364,9 @@ body.portfolio {
 .portfolio-container a {
     text-decoration: none;
     color: #000;
+    border: 1px solid black;
+    padding: .5em 1em;
+    margin-right: 1em;
 }
 
 .projectnav {
@@ -380,13 +386,11 @@ body.portfolio {
 .gallery li {
     list-style: none;
     position: relative;
-    -webkit-filter: brightness(.8);
     margin-top: -1em;
 }
 
-.gallery li:hover {
-    -webkit-filter: brightness(1);
-}
+
+
 
 .gallery img {
     width: 100%;
@@ -394,37 +398,40 @@ body.portfolio {
     margin: 0;
 }
 
-.gallery li a {
-    text-decoration: none;
-    color: #000;
-
+.gallery li img {
+    -webkit-filter: brightness(.6);
 }
 
 .title {
     width: 100%;
-    padding-top: 13%;
     position: absolute;
     top: 0;
+    left: 0;
+    color: white;
+    text-transform: uppercase;
     text-align: center;
-    cursor: pointer;
+    margin: 5% 0 0 0;
 
-}
-
-.title h4,
-.title h5 {
-    text-align: center;
 }
 
 .title h4 {
     font-size: 2em;
-    margin: 0;
+    text-shadow: 0px 0px 2px #000;
 }
 
-.title h5 {
-    margin: 0;
-    font-size: 1.25em;
+.title a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: .5em 2em;
+    text-shadow: 0px 0px 2px #000;
 }
 
+.title a:hover {
+    color: black;
+    background: #fff;
+    text-shadow: none;
+}
 
 
 
